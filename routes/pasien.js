@@ -29,8 +29,19 @@ router.post('/', async (req, res) => {
     }
 })
 // update spesific one data
-router.patch('/:id', getPasien, (req, res) => {
-  
+router.patch('/:id', getPasien, async (req, res) => {
+  if(req.body.nama != null){
+    res.pasien.nama = req.body.nama
+  }
+  if(req.body.penyakit != null){
+    res.pasien.penyakit = req.body.penyakit
+  }
+  try{
+    const updatePasien = await res.pasien.save()
+    res.json(updatePasien)
+  } catch(err){
+    res.status(400).json({message: err.message})
+  }
 })
 
 // delete spesific data

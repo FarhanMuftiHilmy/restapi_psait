@@ -9,9 +9,17 @@ POST  http://localhost:3000/pasien
 Content-Type: application/json
 
 {
-    "nama": "Orang sakit",
+    "nama": "Orang sakit baru",
     "penyakit": "Masuk angin"
 }
 
 ###
 DELETE http://localhost:3000/pasien/60c13b61617e1e1d74e0db66
+
+###
+PATCH http://localhost:3000/pasien/60c249461c557c2e68d0bf0c
+Content-Type: application/json
+
+{
+    "nama": "Orang sakit terupdate"
+}
