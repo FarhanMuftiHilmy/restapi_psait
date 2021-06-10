@@ -1,0 +1,17 @@
+
+GET http://localhost:3000/pasien
+
+###
+GET http://localhost:3000/pasien/60c13b61617e1e1d74e0db66
+
+###
+POST  http://localhost:3000/pasien
+Content-Type: application/json
+
+{
+    "nama": "Orang sakit",
+    "penyakit": "Masuk angin"
+}
+
+###
+DELETE http://localhost:3000/pasien/60c13b61617e1e1d74e0db66
