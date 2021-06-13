@@ -10,7 +10,7 @@ const pasienSchema = new mongoose.Schema({
         type: String,
         required: true 
     },
-    terakhirBelajar: {
+    tanggalPeriksa: {
         type: Date,
         required: true,
         default: Date.now

@@ -2,24 +2,24 @@
 GET http://localhost:3000/pasien
 
 ###
-GET http://localhost:3000/pasien/60c13b61617e1e1d74e0db66
+GET http://localhost:3000/pasien/60c61f1292dcd8322462db1d
 
 ###
 POST  http://localhost:3000/pasien
 Content-Type: application/json
 
 {
-    "nama": "Orang sakit baru",
+    "nama": "Orang sakit baru 2",
     "penyakit": "Masuk angin"
 }
 
 ###
-DELETE http://localhost:3000/pasien/60c13b61617e1e1d74e0db66
+DELETE http://localhost:3000/pasien/60c6235392dcd8322462db1f
 
 ###
-PATCH http://localhost:3000/pasien/60c249461c557c2e68d0bf0c
+PATCH http://localhost:3000/pasien/60c61f1292dcd8322462db1d
 Content-Type: application/json
 
 {
-    "nama": "Orang sakit terupdate"
+    "nama": "Orang sakit baru terupdate"
 }
